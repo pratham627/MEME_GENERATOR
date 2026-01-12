@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls-section">
+            <header>
+                <h1>MemeGen</h1>
+                <p class="subtitle">Create and share viral memes in seconds.</p>
+            </header>
+            
+            <form id="meme-form">
+                <div class="input-group">
+                    <label for="image-input">Upload Image</label>
+                    <input type="file" id="image-input" name="image" accept="image/*" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="top-text">Top Text</label>
+                    <input type="text" id="top-text" name="top_text" placeholder="e.g., WHEN YOU CODE">
+                </div>
+                
+                <div class="input-group">
+                    <label for="bottom-text">Bottom Text</label>
+                    <input type="text" id="bottom-text" name="bottom_text" placeholder="e.g., WITHOUT ERRORS">
+                </div>
+                
+                <button type="submit">Generate Meme</button>
+            </form>
+            
+            <a href="#" id="download-btn" class="download-btn">Download Meme</a>
+        </div>
+        
+        <div class="preview-section">
+            <p class="placeholder-text">Preview will appear here</p>
+            <img id="meme-image" alt="Meme Preview">
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
